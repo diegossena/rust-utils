@@ -1,3 +1,7 @@
+mod config;
+
 fn main() {
-    println!("Hello, world!");
+  let config = config::get();
+
+  println!("{}", config.uuid);
 }
